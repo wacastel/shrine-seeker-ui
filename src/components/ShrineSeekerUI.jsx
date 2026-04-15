@@ -18,7 +18,7 @@ const ShrineSeekerUI = () => {
 
     try {
       // This will point to your local FastAPI server running the MLX model
-      const response = await fetch('http://api.shrineseeker.net/chat', {
+      const response = await fetch('https://api.shrineseeker.net/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: input }),
